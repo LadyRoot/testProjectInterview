@@ -16,7 +16,6 @@ public class AppTest {
     public void testInitializeArray() {
         int[][] current_array = new int[3][3];
         App.initializeArray(current_array, 1);
-        int[][] target_array = new int[3][3]; // starts with 0
 
         int[][] expected_array = new int[3][3];
         expected_array[0][0] = 1;

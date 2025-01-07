@@ -96,7 +96,7 @@ public class App {
                 if (i - 1 < 0) {
                     move_item(current_array, target_array, i, j);
                 } else {
-                    target_array[i - 1][j] += 1;;
+                    target_array[i - 1][j] += 1;
                     current_array[i][j] -= 1;
                 }
                 break;
@@ -104,7 +104,7 @@ public class App {
                 if (i - 1 < 0 || j + 1 >= current_array[i].length) {
                     move_item(current_array, target_array, i, j);
                 } else {
-                    target_array[i - 1][j + 1] += 1;;
+                    target_array[i - 1][j + 1] += 1;
                     current_array[i][j] -= 1;
                 }
                 break;
@@ -112,7 +112,7 @@ public class App {
                 if (j - 1 < 0) {
                     move_item(current_array, target_array, i, j);
                 } else {
-                    target_array[i][j - 1] += 1;;
+                    target_array[i][j - 1] += 1;
                     current_array[i][j] -= 1;
                 }
                 break;
