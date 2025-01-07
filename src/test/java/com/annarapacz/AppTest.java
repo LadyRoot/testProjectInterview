@@ -33,7 +33,7 @@ public class AppTest {
 
 
     @Test
-    @DisplayName("Test if shuffle is done correctly")
+    @DisplayName("Test if number of bugs is always the same after shuffle")
     public void testShuffleItemsTotalCannotChange() {
 
         // the intent is to make sure the total number of bugs in the array does not change

@@ -6,10 +6,11 @@ import java.util.Random;
 
 public class App {
 
-    private static final int square_size = 3;
+    private static final int square_size = 15;
 
     public static void main(String[] args) {
 
+        // we need some initial variables for the field with beetles/bugs
         int[][] current_array = new int[square_size][square_size];
         initializeArray(current_array, 1);
         int[][] target_array = new int[square_size][square_size]; // starts with 0s
@@ -38,6 +39,8 @@ public class App {
         System.out.println("The square(s) with the highest beetle population: " + findMax(current_array));
     }
 
+
+    // find the square with the highest number of beetles
     private static String findMax(int[][] arr2) {
         int max = 0;
         String pos = "";
@@ -47,7 +50,7 @@ public class App {
                     max = arr2[i][j];
                     pos = "[" + i + ", " + j + "]";
                 }
-                else if (arr2[i][j] == max) {
+                else if (arr2[i][j] == max) { // if there are more than one square with the same number of beetles
                     pos += ", [" + i + ", " + j + "]";
                 }
             }
@@ -56,7 +59,7 @@ public class App {
     }
 
     static void shuffle_items(int[][] arr, int[][] arr2) {
-        // we are going to shuffle not only fields,but also items
+        // we are going to shuffle not only fields, but also individual items (beetles)
         // so for each field and each item we need to move them to other fields
         // this is because the bugs on the fields are not glued together, but they can freely move to any direction
         // i.e. field with 3 bugs can move bugs to one of the 8 fields around it, each bug separately
@@ -64,28 +67,28 @@ public class App {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
                     int k = arr[i][j];
-                    while (k > 0) {
+                    while (k > 0) { // as long as there are any beetles in source field in source/initial table
                         move_item(arr, arr2, i, j);
                         k--;
                 }
             }
         }
-
     }
 
+    // main method to move the item from field to field
     private static void move_item(int[][] current_array, int[][] target_array, int i, int j) {
         // we need to move the item to one of the 8 fields around it
         //       |1|2|3|
         //       |4|x|5|  x = [position i, j]
         //       |6|7|8|
         Random random = new Random();
-        int randomNumber = random.nextInt(8) + 1;
+        int randomNumber = random.nextInt(8) + 1; // because the beetle can jump to ANY random direction
 
         // we need to check if the field is out of bounds
-        // if it is, we need to choose a new field again
+        // if it is, we need to choose a new field again until it is a valid field
         switch (randomNumber) {
             case 1:
-                if (i - 1 < 0 || j - 1 < 0) {
+                if (i - 1 < 0 || j - 1 < 0) { // try again, the field is not valid!
                     move_item(current_array, target_array, i, j);
                 } else {
                     target_array[i - 1][j - 1] += 1;
@@ -150,6 +153,7 @@ public class App {
         }
     }
 
+    // just a nice ToString but for the table
     private static void printCurrentArray(int[][] arr) {
         // prints number of beetles per square; dumps the table
         System.out.println("=================");
@@ -163,6 +167,7 @@ public class App {
         }
     }
 
+    // initialize the array with the same number for each field
     static void initializeArray(int[][] arr, int num) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
