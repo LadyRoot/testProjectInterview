@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a62d5a15-1b9d-4a9d-a6c6-be9f46f08bfb" name="Changes" comment="version 1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/annarapacz/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/annarapacz/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,13 +36,16 @@
     "JUnit.AppTest.testInitializeArray.executor": "Run",
     "JUnit.AppTest.testShuffleItems.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.testproject [clean].executor": "Run",
+    "Maven.testproject [deploy].executor": "Run",
     "Maven.testproject [install].executor": "Run",
     "Maven.testproject [org.apache.maven.plugins:maven-surefire-plugin:3.3.0:test].executor": "Run",
     "Maven.testproject [site].executor": "Run",
+    "Maven.testproject [test].executor": "Run",
     "Maven.testproject [verify].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "reports",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -53,7 +56,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JUnit.AppTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.annarapacz.App" />
       <module name="testproject" />
@@ -116,8 +119,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.AppTest" />
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.AppTest.testInitializeArray" />
         <item itemvalue="JUnit.AppTest.testShuffleItems" />
       </list>

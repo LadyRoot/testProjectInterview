@@ -17,16 +17,8 @@ public class AppTest {
         int[][] current_array = new int[3][3];
         App.initializeArray(current_array, 1);
 
-        int[][] expected_array = new int[3][3];
-        expected_array[0][0] = 1;
-        expected_array[0][1] = 1;
-        expected_array[0][2] = 1;
-        expected_array[1][0] = 1;
-        expected_array[1][1] = 1;
-        expected_array[1][2] = 1;
-        expected_array[2][0] = 1;
-        expected_array[2][1] = 1;
-        expected_array[2][2] = 1;
+        int[][] expected_array = new int[][]{{1, 1, 1}, {1, 1, 1}, {1, 1, 1}};
+
 
         assertArrayEquals(expected_array, current_array, "The array should be initialized correctly");
     }
