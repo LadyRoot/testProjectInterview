@@ -45,18 +45,18 @@
     "Maven.testproject [verify].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "reports",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Font",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.AppTest">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.annarapacz.App" />
       <module name="testproject" />
@@ -119,8 +119,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AppTest" />
         <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.AppTest.testInitializeArray" />
         <item itemvalue="JUnit.AppTest.testShuffleItems" />
       </list>
@@ -166,5 +166,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="version 1.0" />
     <option name="LAST_COMMIT_MESSAGE" value="version 1.0" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
